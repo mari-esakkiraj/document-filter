@@ -1,0 +1,20 @@
+<div class="main-container">
+  <h1>Documents</h1>
+  <h3>Search document or select category</h3>
+  <div class="inner-container">
+    <div style="flex-grow: 1">
+      <h3 (click)="tempData = documentData">All</h3>
+      <ng-container *ngFor="let item of tags">
+        <span class="tagStyle" (click)="tagSelected(item)">{{item}}</span><br>
+      </ng-container>
+    </div>
+    <div style="flex-grow: 2">
+      <input type="text" [(ngModel)]="docName" placeholder="Start typing document name..."> <br>
+      <div class="card-list">
+        <ng-container *ngFor="let document of tempData | filter: docName">
+          <app-display-document-details [docDetails]="document"></app-display-document-details>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.main-container {
+    background-color: rgb(238, 238, 241);
+    min-height: 713px;
+    padding: 20px;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px
+}
+
+.inner-container > div {
+    margin: 10px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 97%;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.inner-container div:nth-child(1) {
+    width: 80px
+}
+
+.inner-container div:nth-child(2) {
+    width: 700px
+}
+
+.tagStyle {
+    font-family: system-ui;
+    font-size: 14px;
+    line-height: 30px;
+    color: #827f7f;
+}
+
+h1, h3 {
+    font-family: system-ui;
+}

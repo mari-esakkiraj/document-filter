@@ -1,0 +1,9 @@
+<div class="card">
+    <ng-container *ngIf="docDetails.category !== 'Human resources'; else human_resources">
+        <button [ngClass]="docDetails.category">{{docDetails.category}}</button>
+    </ng-container>
+    <ng-template #human_resources>
+        <button class="human_resources">{{docDetails.category}}</button>
+    </ng-template>
+    <p class="title">{{docDetails.documentName}}</p>
+</div>
